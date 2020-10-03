@@ -1,9 +1,9 @@
 {
-  "name": "Median",
-  "description": "Return the medium value of a cell",
-  "tags": ["basic statistics"],
+  "name": "Multiple Sequence Alignment operator",
+  "description": "Performs Multiple Sequence Alignment in Tercen",
+  "tags": ["bioinformatics"],
   "authors": ["tercen"],
-  "urls": ["https://github.com/tercen/template_operator"],
+  "urls": ["https://github.com/tercen/msa_operator"],
   "properties": []
 }
 
