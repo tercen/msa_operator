@@ -9,10 +9,12 @@
 Input projection|.
 ---|---
 `row`        |  character, input sequences
+`row`        |  character, sequence names
 
 Output relations|.
 ---|---
 `aligned_sequence`        | character, aligned sequences
+`name`        | character, sequence name
 
 ##### Details
 
