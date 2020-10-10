@@ -51,6 +51,19 @@
       "Source": "Bioconductor",
       "Hash": "d6583f46d12fa8895a527bdd2fb1bd25"
     },
+    "DBI": {
+      "Package": "DBI",
+      "Version": "1.0.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "7bc8be0e425da29fe0e10f792bdbb74b"
+    },
+    "DECIPHER": {
+      "Package": "DECIPHER",
+      "Version": "2.10.2",
+      "Source": "Bioconductor",
+      "Hash": "734a4842ab6b1625d01c5d336f468e2f"
+    },
     "IRanges": {
       "Package": "IRanges",
       "Version": "2.16.0",
@@ -63,6 +76,13 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "292b54f8f4b94669b08f94e5acce6be2"
+    },
+    "RSQLite": {
+      "Package": "RSQLite",
+      "Version": "2.1.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "78c7eac4e23d9cbc194b7439bfc45079"
     },
     "Rcpp": {
       "Package": "Rcpp",
@@ -96,6 +116,27 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "e9f705633dc932bfd5b02b17a5053a06"
+    },
+    "bit": {
+      "Package": "bit",
+      "Version": "1.1-14",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "ac0b4115f7bddd07e733e1ac1697c687"
+    },
+    "bit64": {
+      "Package": "bit64",
+      "Version": "0.9-7",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "3338d4a9b1352f5a613e2bdcefe784ea"
+    },
+    "blob": {
+      "Package": "blob",
+      "Version": "1.1.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "3ce988193cfb67e59fde06121bd9f8be"
     },
     "cli": {
       "Package": "cli",
@@ -153,6 +194,13 @@
       "Repository": "CRAN",
       "Hash": "1bb58822a20301cee84a41678e25d9b7"
     },
+    "memoise": {
+      "Package": "memoise",
+      "Version": "1.1.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "58baa74e4603fcfb9a94401c58c8f9b1"
+    },
     "msa": {
       "Package": "msa",
       "Version": "1.14.0",
@@ -186,6 +234,13 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "09eb987710984fc2905c7129c7d85e65"
+    },
+    "prettyunits": {
+      "Package": "prettyunits",
+      "Version": "1.0.2",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "f3c960f0105f2ed179460864979fc37c"
     },
     "purrr": {
       "Package": "purrr",
