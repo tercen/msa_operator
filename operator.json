@@ -4,7 +4,30 @@
   "tags": ["bioinformatics"],
   "authors": ["tercen"],
   "urls": ["https://github.com/tercen/msa_operator"],
-  "properties": []
+  "properties": [
+   {
+    "kind": "EnumeratedProperty",
+    "name": "sequence_type",
+    "defaultValue": "protein",
+    "values": [
+      "protein",
+      "dna",
+      "rna"
+    ],
+    "description": "dna, rna, or protein sequences?"
+  },
+  {
+    "kind": "EnumeratedProperty",
+    "name": "method",
+    "defaultValue": "ClustalW",
+    "values": [
+      "ClustalW",
+      "ClustalOmega",
+      "Muscle"
+    ],
+    "description": "Alignment method, can be ClustalW, Muscle, or ClustalOmega."
+  }
+  ]
 }
 
 
