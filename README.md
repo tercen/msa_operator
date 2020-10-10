@@ -16,7 +16,7 @@ Input projection|.
 Properties|.
 ---|---
 `sequence_type` | whether it is `dna`, `rna`, or `protein` sequences
-`method`        | alignment method, can be `ClustalW`, `Muscle`, or `ClustalOmega`
+`method`        | alignment method, can be `ClustalW`, `Muscle`, `DECIPHER`, or `ClustalOmega`
 
 Output relations|.
 ---|---

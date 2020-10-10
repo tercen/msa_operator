@@ -23,7 +23,8 @@
     "values": [
       "ClustalW",
       "ClustalOmega",
-      "Muscle"
+      "Muscle",
+      "DECIPHER"
     ],
     "description": "Alignment method, can be ClustalW, Muscle, or ClustalOmega."
   }

@@ -3,6 +3,7 @@ library(dplyr)
 library(msa)
 library(Biostrings)
 library(tidyr)
+library(DECIPHER)
 
 options("tercen.workflowId" = "a77770c3923fad0ca99b77fa8905471d")
 options("tercen.stepId"     = "bb25a84f-6304-4e9d-bfaf-85cb5d088ce5")
@@ -26,11 +27,19 @@ set <- apply(df[,-1], 1, function(x) paste0(x[!is.na(x)], collapse = ""))
 if(length(set) > 500) stop("Cannot align more than 500 sequences.")
 names(set) <- df[,1]
 
-AAset <- BStringSet(set)
-
-aln <- msa(AAset, method = method, type = sequence_type)  # default clustal algo
-aln <- msaConvert(aln, type="seqinr::alignment")
-
+if(method != "DECIPHER") {
+  AAset <- BStringSet(set)
+  aln <- msa(AAset, method = method, type = sequence_type)  # default clustal algo
+  aln <- msaConvert(aln, type="seqinr::alignment")
+  
+} else {
+  if(sequence_type == "protein") AAset <- AAStringSet(set)
+  if(sequence_type == "dna") AAset <- DNAStringSet(set)
+  if(sequence_type == "rna") AAset <- RNAStringSet(set)
+  aln <- DECIPHER::AlignSeqs(AAset)
+  aln <- msaConvert(Biostrings::AAMultipleAlignment(aln), type="seqinr::alignment")
+}
+  
 position_aligned <- sapply(aln$seq, function(x) c(gregexpr(pattern = "[a-zA-Z]", x)[[1]]))
 names(position_aligned) <- 1:length(position_aligned) - 1
 
@@ -43,3 +52,4 @@ df_out <- data.frame(
 ) %>%
   ctx$addNamespace() %>%
   ctx$save()
+
