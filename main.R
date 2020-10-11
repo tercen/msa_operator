@@ -21,7 +21,7 @@ df <- ctx %>% select(.ri, .ci) %>%
   spread(.ci, letter)
 
 set <- apply(df[,-1], 1, function(x) paste0(x[!is.na(x)], collapse = ""))
-if(length(set) > 500) stop("Cannot align more than 500 sequences.")
+if(length(set) > 10000) stop("Cannot align more than 10000 sequences.")
 names(set) <- df[,1]
 
 if(method != "DECIPHER") {
